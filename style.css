@@ -1,0 +1,211 @@
+/* league-spartan-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/league-spartan-v11-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/league-spartan-v11-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* league-spartan-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/league-spartan-v11-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --clr-primary-darkGray: hsl(0, 0%, 63%);
+    --clr-primary-vdarkGray: hsl(0, 0%, 27%);
+
+    --fs-base: 0.75rem;
+
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+}
+/* CSS RESET */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    color: var(--clr-primary-darkGray);
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* UTILITIES */
+
+/* Hiding class, making content visible only to screen readers but not visually */
+/* "sr" meaning "screen-reader" */
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+button.btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.img--link {
+    display: inline-block;
+}
+
+/*  */
+body {
+    font-family: "League Spartan";
+    font-weight: var(--fw-medium);
+}
+.card--lrg,
+.card--sml {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 3rem;
+    padding-inline: 1.5rem;
+}
+.card--lrg.card--img {
+    min-width: 375px;
+    min-height: 360px;
+    position: relative;
+    background-image: url("./images/mobile-image-hero-1.jpg");
+}
+.card--sml.card--img {
+    min-width: 375px;
+    min-height: 266px;
+}
+.card--sml:nth-of-type(1) {
+    background-image: url("./images/image-about-dark.jpg");
+}
+.card--sml:nth-of-type(3) {
+    background-image: url("./images/image-about-light.jpg");
+}
+
+.row1 .card--txt {
+    padding-block: 4rem;
+    padding-inline: 2rem;
+}
+
+.sliders-cont {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.slider {
+    background: #000;
+    cursor: pointer;
+    padding-block: 1rem;
+    padding-inline: 1.15rem;
+}
+
+header {
+    display: flex;
+    max-width: 375px;
+}
+.btn.btn--navexpand {
+    position: absolute;
+}
+nav {
+    display: none;
+}
+.logo-cont {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-cont h2 {
+    font-size: 2.35rem;
+    letter-spacing: -1px;
+    line-height: 0.85;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.txt-cont h3 {
+    color: #000;
+    font-weight: var(--fw-semibold);
+    letter-spacing: 5px;
+}
+a.link {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 12px;
+
+    span {
+        margin-right: 12px;
+    }
+}
+
+a.link span {
+    margin-right: 12px;
+}
