@@ -7,6 +7,7 @@ let counter = 0;
 const expandNavBtn = document.querySelector(".btn--navexpand");
 const nav = document.querySelector("nav");
 const closeNavBtn = document.querySelector(".btn--navclose");
+const navModal = document.querySelector(".nav__modal");
 
 imgSlides.forEach(function (slide, index) {
     slide.style.left = `${index * 100}%`;
@@ -41,11 +42,14 @@ function slide(direction) {
 
 function expandNav() {
     nav.style.transform = "translateY(100%)";
+    navModal.style.transform = "translateY(-100%)";
     hide(expandNavBtn);
 }
 
 function closeNav() {
     nav.style.transform = "translateY(0)";
+    navModal.style.transform = "translateY(100%)";
+    hide(expandNavBtn);
     show(expandNavBtn);
 }
 
