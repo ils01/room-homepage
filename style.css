@@ -190,6 +190,7 @@ nav {
 
 header {
     display: flex;
+    position: relative;
 }
 .btn:hover {
     cursor: pointer;
@@ -201,6 +202,7 @@ header {
     position: absolute;
     z-index: 3;
     padding: 5px;
+    bottom: -5px;
 }
 .nav__modal {
     background: rgb(0, 0, 0, 0.5);
