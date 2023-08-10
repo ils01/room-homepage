@@ -4,8 +4,6 @@ const sliderLeft = document.querySelectorAll(".slider--left");
 const sliderRight = document.querySelectorAll(".slider--right");
 let counter = 0;
 
-console.log(sliderLeft);
-
 const expandNavBtn = document.querySelector(".btn--navexpand");
 const nav = document.querySelector("nav");
 const closeNavBtn = document.querySelector(".btn--navclose");
@@ -33,6 +31,7 @@ txtSlides.forEach(function (slide, index) {
 
 expandNavBtn.addEventListener("click", expandNav);
 closeNavBtn.addEventListener("click", closeNav);
+navModal.addEventListener("click", closeNav);
 
 sliderLeft.forEach((slider) =>
     slider.addEventListener("click", function () {
