@@ -64,9 +64,23 @@
                             width="62"
                             heigth="14"
                         />
+                        <ul class="nav__list nav__list--desktop">
+                            <li class="nav__item">
+                                <a href="#" class="link link--menu">home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="link link--menu">shop</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="link link--menu">about</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="link link--menu">contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </header>
-                <div class="sliders-cont">
+                <div class="sliders-cont sliders-cont-mobile">
                     <div class="slider slider--left">
                         <img
                             ;
@@ -85,27 +99,71 @@
                         />
                     </div>
                 </div>
-                <img
-                    class="img--slide"
-                    src="./images/mobile-image-hero-1.jpg"
-                    alt=""
-                    width="375px"
-                    height="360px"
-                /><img
-                    class="img--slide"
-                    src="./images/mobile-image-hero-2.jpg"
-                    alt=""
-                    width="375px"
-                    height="360px"
-                /><img
-                    class="img--slide"
-                    src="./images/mobile-image-hero-3.jpg"
-                    alt=""
-                    width="375px"
-                    height="360px"
-                />
+                <picture>
+                    <source
+                        srcset="./images/desktop-image-hero-1.jpg"
+                        media="(min-width: 600px)"
+                        width="840"
+                        height="534"
+                    />
+                    <img
+                        class="img--slide"
+                        src="./images/mobile-image-hero-1.jpg"
+                        alt=""
+                        width="375px"
+                        height="360px"
+                    />
+                </picture>
+                <picture>
+                    <source
+                        srcset="./images/desktop-image-hero-2.jpg"
+                        media="(min-width: 600px)"
+                        width="840"
+                        height="534"
+                    />
+                    <img
+                        class="img--slide"
+                        src="./images/mobile-image-hero-2.jpg"
+                        alt=""
+                        width="375px"
+                        height="360px"
+                    /> </picture
+                ><picture>
+                    <source
+                        srcset="./images/desktop-image-hero-3.jpg"
+                        media="(min-width: 600px)"
+                        width="840"
+                        height="534"
+                    />
+                    <img
+                        class="img--slide"
+                        src="./images/mobile-image-hero-3.jpg"
+                        alt=""
+                        width="375px"
+                        height="360px"
+                    />
+                </picture>
             </div>
             <div class="card card--txt">
+                <div class="sliders-cont sliders-cont-desktop noselect">
+                    <div class="slider slider--left">
+                        <img
+                            ;
+                            src="./images/icon-angle-left.svg"
+                            alt="slider left"
+                            width="14"
+                            height="24"
+                        />
+                    </div>
+                    <div class="slider slider--right">
+                        <img
+                            src="./images/icon-angle-right.svg"
+                            alt="slider right"
+                            width="14"
+                            height="24"
+                        />
+                    </div>
+                </div>
                 <div class="txt-cont">
                     <div class="txt--slide">
                         <h2>Discover innovative ways to decorate</h2>
@@ -120,19 +178,19 @@
                     </div>
 
                     <div class="txt--slide">
-                        <h2>Discover 2222222 ways to decorate</h2>
+                        <h2>We are available all across the globe</h2>
                         <p>
-                            We provide unmatched quality, comfort, and style for
-                            property owners across the country. Our experts
-                            combine form and function in bringing your vision to
-                            life. Create a room in your own style with our
-                            collection and make your property a reflection of
-                            you and what you love.
+                            With stores all over the world, it's easy for you to
+                            find furniture for your home or place of business.
+                            Locally, we’re in most major cities throughout the
+                            country. Find the branch nearest you using our store
+                            locator. Any questions? Don't hesitate to contact us
+                            today.
                         </p>
                     </div>
 
                     <div class="txt--slide">
-                        <h2>1121234</h2>
+                        <h2>Manufactured with the best materials</h2>
                         <p>
                             We provide 333333333 quality, comfort, and style for
                             property owners across the country. Our experts
@@ -143,13 +201,27 @@
                         </p>
                     </div>
                 </div>
-                <a class="link" href="#"
-                    ><span>SHOP NOW</span
-                    ><img
+                <a class="link shop-link" href="#"
+                    ><span>SHOP NOW</span>
+                    <!-- <img
+
                         class="img--link"
                         src="./images/icon-arrow.svg"
                         alt=""
-                /></a>
+                /> -->
+                    <svg
+                        class="img--link"
+                        width="40"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                            fill="#000"
+                            fill-rule="nonzero"
+                        />
+                    </svg>
+                </a>
             </div>
         </section>
 
@@ -167,13 +239,12 @@
                 <div class="txt-cont">
                     <h3>ABOUT OUR FURNITURE</h3>
                     <p>
-                        Our multifunctional collection blends design and
-                        function to suit your individual taste. Make each room
-                        unique, or pick a cohesive theme that best express your
-                        interests and what inspires you. Find the furniture
-                        pieces you need, from traditional to contemporary styles
-                        or anything in between. Product specialists are
-                        available to help you create your dream space.
+                        Our modern furniture store provide a high level of
+                        quality. Our company has invested in advanced technology
+                        to ensure that every product is made as perfect and as
+                        consistent as possible. With three decades of experience
+                        in this industry, we understand what customers want for
+                        their home and office.
                     </p>
                 </div>
             </div>
@@ -186,34 +257,5 @@
                 />
             </div>
         </section>
-        <!-- Home Shop About Contact Discover innovative ways to decorate We provide
-        unmatched quality, comfort, and style for property owners across the
-        country. Our experts combine form and function in bringing your vision
-        to life. Create a room in your own style with our collection and make
-        your property a reflection of you and what you love. Shop now We are
-        available all across the globe With stores all over the world, it's easy
-        for you to find furniture for your home or place of business. Locally,
-        we’re in most major cities throughout the country. Find the branch
-        nearest you using our store locator. Any questions? Don't hesitate to
-        contact us today. Shop now Manufactured with the best materials Our
-        modern furniture store provide a high level of quality. Our company has
-        invested in advanced technology to ensure that every product is made as
-        perfect and as consistent as possible. With three decades of experience
-        in this industry, we understand what customers want for their home and
-        office. Shop now About our furniture Our multifunctional collection
-        blends design and function to suit your individual taste. Make each room
-        unique, or pick a cohesive theme that best express your interests and
-        what inspires you. Find the furniture pieces you need, from traditional
-        to contemporary styles or anything in between. Product specialists are
-        available to help you create your dream space.
-
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-        </div> -->
     </body>
 </html>
